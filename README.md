@@ -87,15 +87,13 @@ SELECT name FROM employee WHERE salary > 50000;
 ## Example Output
 
 ```
-========================================
 SQL QUERY ANALYZER
-========================================
 
 INPUT
 SELECT name FROM employee WHERE salary > 50000;
 
 LEXICAL ANALYSIS
-----------------------------------------
+
 SELECT       KEYWORD
 name         IDENTIFIER
 FROM         KEYWORD
@@ -107,8 +105,8 @@ salary       IDENTIFIER
 ;            SEMICOLON
 
 SYNTAX ANALYSIS
-----------------------------------------
-✓ Valid SELECT statement
+
+Valid SELECT statement
 ```
 
 ## Current Implementation
