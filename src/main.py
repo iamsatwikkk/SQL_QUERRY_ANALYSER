@@ -20,7 +20,6 @@ def analyze(query):
     print()
 
     print("LEXICAL ANALYSIS")
-    print("-" * 40)
     try:
         tokens = Lexer(query).tokenize()
     except LexicalError as error:
@@ -30,7 +29,6 @@ def analyze(query):
     print()
 
     print("SYNTAX ANALYSIS")
-    print("-" * 40)
     try:
         Parser(tokens).parse()
     except ParseError as error:
